@@ -113,29 +113,39 @@
 
  <script>
     window.addEventListener('scroll', function() {
+    // отримуємо висоту вікна
+    const windowHeight = window.innerHeight;
 
-        //для зміни кольору меню
-        const element = document.getElementById("head_div");  
-        if (window.scrollY > 980) { 
-            element.classList.remove("header_menu"); 
-            element.classList.add("header_menu_done");  
-        } else{
-            element.classList.remove("header_menu_done"); 
-            element.classList.add("header_menu");
-        }
+    // для зміни кольору меню відносно висоти вікна
+    const element = document.getElementById("head_div");  
+    const triggerPoint = windowHeight * 0.98; // 1.5 означає 150% висоти вікна
 
-        //зменшення заголовку
-        const scalableText = document.getElementById("scalable-text");
-        const scrollPosition = window.scrollY;
+    if (window.scrollY > triggerPoint) { 
+        element.classList.remove("header_menu"); 
+        element.classList.add("header_menu_done");  
+    } else {
+        element.classList.remove("header_menu_done"); 
+        element.classList.add("header_menu");
+    }
 
-        let newFontSize = 780 - scrollPosition * 0.8; 
+    // зменшення заголовку з використанням vh
+    const scalableText = document.getElementById("scalable-text");
+    const scrollPosition = window.scrollY;
 
-         if (newFontSize < 50) {
-            newFontSize = 50;
-        }
+    // Максимальний розмір шрифту в vh
+    const maxFontSize = 72.22; // 72.22vh
+    const minFontSize = 5;     // 5vh, як приклад мінімального значення
+    
+    // Обчислюємо новий розмір шрифту
+    let newFontSize = maxFontSize - scrollPosition * 0.08; // масштабування на основі прокрутки
 
-        scalableText.style.fontSize = newFontSize + "px";
-    });
+    // Обмежуємо мінімальний розмір
+    if (newFontSize < minFontSize) {
+        newFontSize = minFontSize;
+    }
+
+    scalableText.style.fontSize = newFontSize + "vh";
+});
 
     
 

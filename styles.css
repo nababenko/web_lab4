@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    border: 2px solid red;
 }
 
 body {
@@ -22,7 +21,7 @@ body {
  
 
 .photo_item img{
-    max-width: 29rem;    
+    max-width: 24.167vw;    
 }
 
 /* HEADER */
@@ -129,14 +128,15 @@ header{
 /*  part 1 */
 .welcome {
     background-image: url(resources/first_background.jpg);
-    height: 1020px;
+    background-size: cover;
+    height: 100vh;
     text-align: center;
 }
 
 .welcome p {
     color: #f8f8f8;
     text-decoration: none;
-    font-size: 780px;    
+    font-size: 72.22vh;    
     font-family: "Xanh Mono", monospace;
     position: absolute; 
     bottom: 0; 
@@ -150,9 +150,8 @@ header{
 
 /*  part 2 */
 .about_us{
-    margin-top: 100px;
-    padding: 100px;    
-    padding-right: 10%;  
+    margin-top: 9.259vh;
+    padding: 9.259vh;   
 }
 .about_info{
     text-align: center;  
@@ -177,30 +176,31 @@ header{
 /*  part 3  */
 .products{
     background-image: url(resources/background.png);
-    height: 1080px;
-    font-size: 66px;
-    padding-top: 30px;
-    margin-bottom: 100px;
+    background-size: cover;
+    height: 110vh;
+    font-size: 6.2vh;
+    padding-top: 2.778vh;
+    margin-bottom: 9.259vh;
 }
 .products ul{list-style-type: none;}
 .products a{
     text-decoration: none;
-    letter-spacing: 2rem;
+    letter-spacing: 1.667vw;
     color: rgba(100, 96, 86, 1);
     display: inline-block; 
-    height: 50px; 
-    line-height: 50px; 
+    height: 4.63vh; 
+    line-height: 4.63vh; 
     transition: all 0.3s ease; 
 }
 .products a:hover{
     font-family: "Viaoda Libre", serif;  
     color: rgba(100, 96, 86, 1);
     text-shadow: 3px 2px 4px rgba(141, 141, 141, 0.93);
-    letter-spacing: 3rem;
+    letter-spacing: 4vw;
     
 }
  .products li{
-    padding: 1rem;
+    padding: 2vh;
  }
  #l1{padding-left: 49%;}
  #l2{padding-left: 44.7%;}
@@ -239,7 +239,7 @@ header{
 }
 
 .materials_photos_container img {
-    max-height: 268px;
+    max-height: 24.815vh;
     width: auto; 
 }
 
@@ -254,7 +254,6 @@ header{
 }
 .shop_info{
     text-align: center;
-    padding-right: 10%;
 }
 .shop_in_store img{
     border-radius: 62px;
