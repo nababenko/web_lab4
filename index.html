@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>té Furniture</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://kit.fontawesome.com/86b7756615.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header_menu" id="head_div">
+                <div class="dropdown">
+                    <button class="menu_button">MENU</button>
+                    <div class="dropdown-content">
+                        <a href="???">ABOUT US</a>
+                        <a href="???">CATEGORIES</a>
+                        <a href="???">MATERIALS</a>
+                        <a href="???">SHOP IN STORE</a>
+                        <a href="???">CONTACTS</a>
+                    </div>
+                </div>                     
+                <a class="products_link" href="???">PRODUCTS</a>
+                <button class="bucket_button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+        </nav>
+    </header>
+
+
+<main>
+    <section class="welcome"> 
+         <a href="???">té</a>
+    </section>
+
+    
+
+    <section class="about_us">
+        <div class="about_info">
+            <p class="head">ABOUT US</p>
+            <p class="text">We specialize in offering high-quality, stylish furniture designed to elevate any living space. Our curated selection combines comfort, functionality, and modern aesthetics to meet the diverse needs of our customers. With a commitment to exceptional craftsmanship and customer service, we help you create a home that reflects your unique style.</p>
+        </div>
+        <img src="resources/2.jpg" alt="item" height="732">
+    </section>
+
+    <section class="products">
+        <ul >
+            <li><a href="???" id="l1">BEDS</a></li>
+            <li><a href="???" id="l2">DECOR</a></li>
+            <li><a href="???" id="l3">TABLES</a></li>
+            <li><a href="???" id="l4">SHELVES</a></li>
+            <li><a href="???" id="l5">ARMCHAIRS</a></li>
+            <li><a href="???" id="l6">SOFAS</a></li>
+        </ul>    
+    </section>
+
+    <section class="materials">
+        <div class="materials_info">
+            <p class="materials_head">MATERIALS</p>
+            <p class="materials_text">We take pride in using only premium materials for all our furniture pieces, ensuring durability and long-lasting quality. From solid wood and metal to luxurious fabrics and leathers, each material is carefully selected for its strength and aesthetic appeal. Our commitment to sustainable sourcing means you can enjoy beautiful, eco-friendly furniture that stands the test of time.</p>
+        </div>
+        <div class="materials_photos_container">
+            <span>
+                <img src="resources/8.png" alt="item1" >
+                <img src="resources/5.png" alt="item2" >
+                <img src="resources/15.png" alt="item3" >
+                <img src="resources/16.png" alt="item4" >
+                <img src="resources/14.png" alt="item5">
+            </span>
+        </div>
+    </section>
+
+
+    <section class="shop_in_store">
+        <img src="resources/location.jpg" alt="shop in store picture" height="732">
+        <div class="shop_info">
+            <p class="head">SHOP IN STORE</p>
+            <p class="text">Shop in-store at our convenient location in Chicago and explore our wide range of quality furniture pieces firsthand.</p>
+            <a href="???" class="shop_info_button">Find a store</a>
+        </div>
+    </section>
+
+    <section class="additional">
+        <table>
+            <tr>
+                <th>Питання</th>
+                <th>Відповідь</th>
+            </tr>
+            <tr>
+                <td>Яка тема проекту?</td>
+                <td>Розробка вебсайту онлайн-магазину меблів.</td>
+            </tr>
+            <tr>
+                <td>Де знаходиться опис бізнес-логіки?</td>
+                <td><a href="topic/topic.html">Натисніть щоб перейти за посиланням.</a></td>
+            </tr>
+            <tr>
+                <td>Зі скількох вебсторінок складатиметься проект?</td>
+                <td>Проект ще буде доопрацьовуватись. Заплановано точно ще 4 сторінки. </td>
+            </tr>
+        </table>
+    </section>
+
+</main>
+
+
+<footer>
+<p class="footer_text">For any inquiries or assistance, feel free to reach out to us using the contact information below</p>
+    <div class="footer_info">
+        <div class="contacts">
+            <p class="number">+1 000 000 00 00</p>
+            <p class="email">te_contactUs@mail.com</p>
+            <p class="address">Mar Vista 12928 Venice Blvd. Chicago, CA 9066</p>
+        </div>
+        <div class="links">
+            <i class="fa-brands fa-instagram"></i><a id="inst" href="???">INSTAGRAM</a><br>
+            <i class="fa-brands fa-pinterest"></i><a id="pint" href="???">PINTEREST</a><br>
+            <i class="fa-brands fa-facebook"></i><a id="facebook" href="???">FACEBOOK</a>
+        </div>
+    </div>
+    <p class="rights">© 2024 Babenko company. All rights reserved.</p>
+</footer>
+
+ <script>
+    window.addEventListener('scroll', function() {
+        const element = document.getElementById("head_div");  
+        if (window.scrollY > 980) { 
+            element.classList.remove("header_menu"); 
+            element.classList.add("header_menu_done");  
+        } else{
+            element.classList.remove("header_menu_done"); 
+            element.classList.add("header_menu");
+        }
+    });
+</script> 
+</body>
+</html>
