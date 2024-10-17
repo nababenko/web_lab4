@@ -135,7 +135,6 @@ header{
 
 .welcome p {
     color: #f8f8f8;
-    text-decoration: none;
     font-size: 72.22vh;    
     font-family: "Xanh Mono", monospace;
     position: absolute;
@@ -146,7 +145,9 @@ header{
     transition: font-size 0.2s ease;
     z-index: 1;
 }
-
+#fixed-text{
+    display: none;
+}
 
 
 /*  part 2 */
@@ -316,3 +317,135 @@ footer i{
     padding-right: 20%;
 }
 
+
+@media (max-width: 768px) {
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    
+    .dropdown-content {
+        min-width: 100%;
+    }
+
+    /* part 1 */
+    .welcome {
+        height: 100vh;
+    }
+
+    #scalable-text {
+        display: none;
+    }
+    #fixed-text{
+        font-size: 60vw; 
+        display: block;
+        font-family: "Xanh Mono", monospace;
+        position: absolute;
+        bottom: 35%; 
+        left: 50%; 
+        margin: 0;  
+        
+    }
+    /* part 2 */
+    .about_us {
+        flex-direction: column;
+        padding: 5vh 2%;
+    }
+
+    .about_info {
+        padding: 0;
+    }
+
+    .head {
+        font-size: 48px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .photo_item img {
+        max-width: 90vw; 
+        margin-top: 20px;
+    }
+
+    /* part3 */
+    .products {
+        height: auto;
+        padding: 20px;
+        font-size: 4vh;
+    }
+
+    .products a {
+        letter-spacing: normal;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .products a:hover{
+        letter-spacing: 1.5vw;
+    }
+
+    /* part 4 */
+    .materials {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .materials_photos_container {
+        
+        align-items: center;
+    }
+
+    .materials_photos_container img {
+        max-width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    /* part 5 */
+    .shop_in_store {
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .shop_in_store img {
+        max-width: 90vw; 
+        margin-bottom: 20px;
+    }
+
+    .shop_in_store a {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    /* Footer */
+    .footer_info {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contacts, .links {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rights {
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 24px;
+    }
+}
