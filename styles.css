@@ -318,7 +318,82 @@ footer i{
 }
 
 
-@media (max-width: 768px) {
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*  part 2 */
+    .about_us {
+        margin-top: 6vh;
+        padding: 5vh;
+        flex-direction: column; 
+        
+    }
+
+    .about_info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about_us img {
+        max-width: 80%; 
+        margin: 20px auto;
+    }
+    .photo_item{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    /*  part 3 */
+    .products {
+        height: auto;
+        padding-top: 5vh;
+    }
+
+    .products a {
+        
+        letter-spacing: 1vw;
+    }
+    .products a:hover{
+        letter-spacing: 2.5vw;
+    }
+
+    /*  part 4 */
+    .materials {
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }   
+
+    .materials_photos_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .materials_photos_container img {
+        max-height: 20vh;
+        margin-bottom: 20px;
+    }
+
+    /*  part 5 */
+    .shop_in_store {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .shop_in_store img {
+        max-width: 80%; 
+        margin: 20px auto;
+    }
+
+    .shop_info {
+        text-align: center;
+    }
+
+        
+}
+
+
+@media only screen and (max-width: 768px) {
     
     body {
         margin: 0;
