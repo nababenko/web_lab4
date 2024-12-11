@@ -157,7 +157,7 @@ header{
 }
 .about_info{
     text-align: center;  
-    padding-left: 10%;
+    padding-left: 5%;
 }
 .head{
     font-size: 86px;
@@ -172,6 +172,60 @@ header{
 
 .about_us img{
     border-radius: 62px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.slider_wrapper{
+    max-width: 27%;
+}
+.mySlides {display: none}
+
+.slideshow_container {
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: 30%;
+    padding: 16px;
+    height: 100%;
+    top: 0;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 62px;
+}
+
+.next {
+    right: 0;
+    border-radius: 62px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
@@ -334,14 +388,8 @@ footer i{
         text-align: center;
     }
 
-    .about_us img {
-        max-width: 80%; 
-        margin: 20px auto;
-    }
-    .photo_item{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
+    .slider_wrapper{
+        max-width: 80%;
     }
 
     /*  part 3 */
@@ -449,11 +497,8 @@ footer i{
     .text {
         font-size: 18px;
     }
+    .slider_wrapper{max-width: 90vw;}
 
-    .photo_item img {
-        max-width: 90vw; 
-        margin-top: 20px;
-    }
 
     /* part3 */
     .products {
