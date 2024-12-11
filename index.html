@@ -21,11 +21,11 @@
                 <div class="dropdown">
                     <button class="menu_button">MENU</button>
                     <div class="dropdown-content">
-                        <a href="???">ABOUT US</a>
-                        <a href="???">CATEGORIES</a>
-                        <a href="???">MATERIALS</a>
-                        <a href="???">SHOP IN STORE</a>
-                        <a href="???">CONTACTS</a>
+                        <a href="#about_us">ABOUT US</a>
+                        <a href="#products">CATEGORIES</a>
+                        <a href="#materials">MATERIALS</a>
+                        <a href="#shop_in_store">SHOP IN STORE</a>
+                        <a href="#footer">CONTACTS</a>
                     </div>
                 </div> 
 
@@ -48,7 +48,7 @@
 
     
 
-    <section class="about_us">
+    <section class="about_us" id="about_us">
         <div class="about_info">
             <p class="head">ABOUT US</p>
             <p class="text">We specialize in offering high-quality, stylish furniture designed to elevate any living space. Our curated selection combines comfort, functionality, and modern aesthetics to meet the diverse needs of our customers. With a commitment to exceptional craftsmanship and customer service, we help you create a home that reflects your unique style.</p>
@@ -56,7 +56,7 @@
         <div class="photo_item"><img src="resources/2.jpg" alt="item" ></div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <ul >
             <li><a href="???" id="l1">BEDS</a></li>
             <li><a href="???" id="l2">DECOR</a></li>
@@ -67,7 +67,7 @@
         </ul>    
     </section>
 
-    <section class="materials">
+    <section class="materials" id="materials">
         <div class="materials_info">
             <p class="materials_head">MATERIALS</p>
             <p class="materials_text">We take pride in using only premium materials for all our furniture pieces, ensuring durability and long-lasting quality. From solid wood and metal to luxurious fabrics and leathers, each material is carefully selected for its strength and aesthetic appeal. Our commitment to sustainable sourcing means you can enjoy beautiful, eco-friendly furniture that stands the test of time.</p>
@@ -83,7 +83,7 @@
     
 
 
-    <section class="shop_in_store">
+    <section class="shop_in_store" id="shop_in_store">
         <div class="photo_item"><img src="resources/location.jpg" alt="shop in store picture" ></div>
         <div class="shop_info">
             <p class="head">SHOP IN STORE</p>
@@ -96,7 +96,7 @@
 </main>
 
 
-<footer>
+<footer id="footer">
 <p class="footer_text">For any inquiries or assistance, feel free to reach out to us using the contact information below</p>
     <div class="footer_info">
         <div class="contacts">
@@ -113,38 +113,6 @@
     <p class="rights">© 2024 Babenko company. All rights reserved.</p>
 </footer>
 
- <script>
-    window.addEventListener('scroll', function() {
-    const windowHeight = window.innerHeight;
-
-    const element = document.getElementById("head_div");  
-    const triggerPoint = windowHeight * 0.98; 
-
-    // для зміни кольору меню відносно висоти вікна
-    if (window.scrollY > triggerPoint) { 
-        element.classList.remove("header_menu"); 
-        element.classList.add("header_menu_done");  
-    } else {
-        element.classList.remove("header_menu_done"); 
-        element.classList.add("header_menu");
-    }
-    // зменшення розміру текту при прокрутці
-    const scalableText = document.getElementById("scalable-text");
-    const scrollPosition = window.scrollY;
-
-    const maxFontSize = 72.22; 
-    const minFontSize = 5;    
-    let newFontSize = maxFontSize - scrollPosition * 0.08; 
-
-    if (newFontSize < minFontSize) {
-        newFontSize = minFontSize;
-    }
-
-    scalableText.style.fontSize = newFontSize + "vh";
-});
-
-    
-
-</script> 
+ <script src="script.js"></script>
 </body>
 </html>
